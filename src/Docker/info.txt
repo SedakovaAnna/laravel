@@ -1,0 +1,12 @@
+запустить докер
+docker-compose up -d
+
+опустить
+docker-compose down
+
+подключиться для миграции
+docker exec -it project_app bash
+
+в контейнере
+php artisan migrate
+
