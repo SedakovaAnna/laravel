@@ -30,4 +30,32 @@ git init
 
 git status
 
+
+Добавить файлы для отслеживания
 git add *
+
+git commit -m "init laravel"
+
+подключиться к гитхаб
+git config credential.username "SedakovaAnna"
+
+создать токен
+https://github.com/settings/tokens
+
+отправить всё на удаленный репозиторий
+git remote add laravel https://github.com/SedakovaAnna/laravel.git
+git push -u laravel master
+
+можно еще работать с гитлаб
+
+Создать на гитхабе ветку develop
+
+загрузить ветки на локальную машину
+git branch -r
+
+создать ветку develop на локальной машине
+git checkout -b develop laravel/develop
+
+Переключиться на мастер
+git checkout -b master
+
