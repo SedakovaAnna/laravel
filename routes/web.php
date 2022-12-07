@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Main;
-use App\Http\Controllers\Main\Admin;
+//use App\Http\Controllers\Main\IndexController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +15,7 @@ use App\Http\Controllers\Main\Admin;
 */
 
 Route::get('/', 'App\Http\Controllers\Main\IndexController');
+Route::get('admin', 'App\Http\Controllers\Admin\IndexController');
 
 
 // Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function(){
