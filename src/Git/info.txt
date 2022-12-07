@@ -59,3 +59,62 @@ git checkout -b develop laravel/develop
 Переключиться на мастер
 git checkout -b master
 
+На новом компьютере
+git clone https://github.com/SedakovaAnna/laravel.git git_laravel
+Установить программы
+composer install
+установить node
+npm i
+
+Скопировать .env
+Создать файл для базы данных tmp
+
+Создание задачи в гит хабе
+issues
+
+Например Post controller
+ Post controller #1 
+
+Создать ветку в гитхабе 1_post_controller от мастер
+переключиться на ветку для разработки
+git fetch
+git checkout 1_post_controller
+
+Проделать работу
+php artisan make:controller PostController
+
+git add .
+git commit -m "Post Controller"
+
+git push
+token
+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
+
+
+На гитхабе Pull reguests
+
+создать новый пул реквест из 1_post_controller в develop
+merge pull request
+
+создать новый пул реквест из develop в master
+merge pull request
+confirm merge
+
+Удалить ветку 1_post_controller
+
+подключиться по ssh
+сгенерировать ключ фраза 123
+ssh-keygen -t ed25519
+
+скопировать 
+cat ~/.ssh/id_ed25519.pub
+
+добавить в гитхаб ssh keys
+
+удалить
+git remote -v
+git remote remove laravel
+
+Добавить по ssh
+git remote add github git@github.com:SedakovaAnna/laravel.git
+git remote -v
