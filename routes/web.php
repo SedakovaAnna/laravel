@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Main;
+use App\Http\Controllers\Main\Admin;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\Main\IndexController');
 
+
+// Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function(){
+
+// });
 
 
 Route::get('/dashboard', function () {
